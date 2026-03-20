@@ -29,3 +29,19 @@ target/
 
 # metrics
 *.csv
+
+# conda environments
+.conda/
+
+# Python virtual environments
+.venv/
+.venv-uv/
+
+# Python build artifacts
+dist/
+build/
+*.egg-info/
+__pycache__/
+
+# uv lock file
+uv.lock

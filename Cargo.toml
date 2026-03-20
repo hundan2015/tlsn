@@ -21,6 +21,7 @@ members = [
     "crates/harness/executor",
     "crates/harness/runner",
     "crates/harness/plot",
+    "crates/tlsn-python",
     "crates/tlsn",
 ]
 resolver = "2"

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "tlsn-python"
+version = "0.1.0a1"
+description = "Python bindings for TLSNotary"
+requires-python = ">=3.9"
+
+[tool.maturin]
+python-source = "."
+module-name = "tlsn_python.tlsn_python"
+features = []

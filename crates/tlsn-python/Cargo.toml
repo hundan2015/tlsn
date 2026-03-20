@@ -1,0 +1,28 @@
+[package]
+name = "tlsn-python"
+version = "0.1.0-alpha.1"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Python bindings for TLSNotary SDK"
+repository = "https://github.com/tlsnotary/tlsn.git"
+
+[lints]
+workspace = true
+
+[lib]
+name = "tlsn_python"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22", features = ["extension-module"] }
+pyo3-async-runtimes = { version = "0.22", features = ["tokio-runtime"] }
+pythonize = "0.22"
+rayon = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+tlsn-sdk-core = { workspace = true }
+tokio = { workspace = true, features = ["net", "rt", "sync"] }
+tokio-util = { workspace = true, features = ["compat"] }
+
+[build-dependencies]
+pyo3-build-config = { version = "0.22" }
